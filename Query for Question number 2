@@ -1,0 +1,4 @@
+
+SELECT a.id, a.name, b.name AS parent
+FROM table_problem a
+LEFT JOIN table_problem b ON a.parent_name = b.id;
